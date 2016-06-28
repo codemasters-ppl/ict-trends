@@ -1,0 +1,3 @@
+markdown: redcarpet
+baseurl: /ict-trends
+exclude: ['README.md']
