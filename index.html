@@ -2,8 +2,10 @@
 layout: default
 ---
 
-<h4>Current and Future Trends in ICT</h4>
+<h2>Current and Future Trends in ICT</h2>
 <p>Мэдээлэл, харилцаа холбооны технологийн орчин үеийн хандлага</p>
+
+<!-- ICT brands -->
 
 <h2>ICT Brands</h2>
 
@@ -16,12 +18,14 @@ layout: default
   {% endfor %}
 </ol>
  
+<!-- recently news -->
+
  <h2>Recently</h2>
  
  <ul>
-	{% for news in site.categories.recently %}
+	{% for news in site.categories.recently limit:5 %}
 	<li>
-		<a href="">{{news.title}}</a>
+		<a href="{{site.baseurl}}{{news.url}}"">{{news.title}}</a>
 		<p>{{news.meta}}</p>
 	</li>
 	{% endfor %}
