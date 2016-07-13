@@ -1,22 +1,56 @@
+<!DOCTYPE html>
 <html lang="en-us">
 <head>
 	<meta charset="utf-8">
 	<title>Current and Future Trends in ICT</title>
-	<link rel="stylesheet" href="{{site.baseurl}}/css/common.css">
-</head>
-<body>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<link rel="stylesheet" href="{{site.baseurl}}/css/common.css">
+
+</head>
+<body data-spy="scroll" data-target="#my-navbar">
+<div class="container text-center">
 <header>
-	<h1>Current and Future Trends in ICT</h1>
+	<h3>Current and Future Trends in ICT</h3>
 	{% include nav.html navclass='nav-top' %}
 </header>
+</div>	
 
+<div class="container">
 {{content}}
+</div>
 
-<footer>
+
+<!-- <footer>
+  <div class="container text-center">
+
 	{% include nav.html navclass='nav-bottom' %}
-	<p>©️ 2016 Current and Future Trends in ICT</p>
-</footer>
+	<p>&copy; 2016 Current and Future Trends in ICT</p>
+  </div>
+</footer> -->
+
+<!-- Footer -->
+
+    <footer>
+      <hr>
+        <div class="container text-center">
+        <ul class="list-inline">
+          <li><a href="http://www.twitter.com">Twitter</a></li>
+          <li><a href="http://www.facebook.com">Facebook</a></li>
+          <li><a href="http://www.youtube.com">YouTube</a></li>
+          <li><a href="http://www.instagram.com">Instagram</a></li>
+          <li><a href="http://www.wechat.com">Wechat</a></li>
+          <li><a href="http://www.qq.com">QQ</a></li>
+        </ul>
+        <p>&copy; 2016 Current and Future Trends in ICT</p>
+      </div>
+    </footer>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -2,5 +2,28 @@
 layout: default
 ---
 
-<h1>Current and Future Trends in ICT</h1>
+<h4>Current and Future Trends in ICT</h4>
 <p>Мэдээлэл, харилцаа холбооны технологийн орчин үеийн хандлага</p>
+
+<h2>ICT Brands</h2>
+
+<ol>
+  {% for planet in site.data.planet-types %}
+    <li>
+      <a href="{{site.baseurl}}/planets/{{planet.folder}}/">{{planet.title}}</a>
+      {{planet.content | markdownify }}
+    </li>
+  {% endfor %}
+</ol>
+ 
+ <h2>Recently</h2>
+ 
+ <ul>
+	{% for news in site.categories.recently %}
+	<li>
+		<a href="">{{news.title}}</a>
+		<p>{{news.meta}}</p>
+	</li>
+	{% endfor %}
+</ul>
+

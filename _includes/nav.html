@@ -1,9 +1,11 @@
-<nav>
-   <ul class="nav {{include.navclass}}">
-	<li><a href="{{site.baseurl}}/" class="{% if page.url == '/index.html' %}current{% endif %}">Home</a></li>
-	<li><a href="{{site.baseurl}}/news.html" class="{% if page.url == '/news.html' %}current{% endif %}">News</a></li>
-	<li><a href="{{site.baseurl}}/events" class="{% if page.url == '/events.html' %}current{% endif%}">Events</a></li>
-	<li><a href="{{site.baseurl}}/about.html" class="{% if page.url == '/about.html' %}current{% endif%}">About</a></li>
-	<li><a href="{{site.baseurl}}/contact.html" class="{% if page.url == '/contact.html' %}current{% endif%}">Contact</a></li>
-   </ul>
-</nav>
+<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	   <ul class="nav {{include.navclass}}">
+		<li><a href="{{site.baseurl}}/" class="{% if page.url == '/' %}current{% endif %}">Home</a></li>
+		<li><a href="{{site.baseurl}}/news.html" class="{% if page.url == '/news.html' %}current{% endif %}">News</a></li>
+		<li><a href="{{site.baseurl}}/events" class="{% if page.url == '/events.html' %}current{% endif%}">Events</a></li>
+		<li><a href="{{site.baseurl}}/about.html" class="{% if page.url == '/about.html' %}current{% endif%}">About</a></li>
+		<li><a href="{{site.baseurl}}/contact.html" class="{% if page.url == '/contact.html' %}current{% endif%}">Contact</a></li>
+	   </ul>
+	  </div>
+	</nav>
