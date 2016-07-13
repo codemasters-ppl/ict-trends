@@ -10,22 +10,22 @@ layout: default
 <h2>ICT Brands</h2>
 
 <ol>
-  {% for planet in site.data.planet-types %}
-    <li>
-      <a href="{{site.baseurl}}/planets/{{planet.folder}}/">{{planet.title}}</a>
-      {{planet.content | markdownify }}
-    </li>
+  {% for brand in site.categories.brand-type %}
+   	   <li>
+      	   <a href="#">{{brand.title}}</a>
+      	   {{brand.content}}
+   	   </li>
   {% endfor %}
 </ol>
- 
+
 <!-- recently news -->
 
  <h2>Recently</h2>
  
  <ul>
-	{% for news in site.categories.recently limit:5 %}
+	{% for news in site.categories.recently limit:3 %}
 	<li>
-		<a href="{{site.baseurl}}{{news.url}}"">{{news.title}}</a>
+		<a href="{{site.baseurl}}{{news.url}}">{{news.title}}</a>
 		<p>{{news.meta}}</p>
 	</li>
 	{% endfor %}
