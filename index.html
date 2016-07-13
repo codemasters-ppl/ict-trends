@@ -10,10 +10,10 @@ layout: default
 <h2>ICT Brands</h2>
 
 <ol>
-  {% for brand in site.categories.brand-type %}
+  {% for brand in site.data.brand-types %}
    	   <li>
       	   <a href="#">{{brand.title}}</a>
-      	   {{brand.content}}
+      	   {{brand.content | markdownify }}
    	   </li>
   {% endfor %}
 </ol>
