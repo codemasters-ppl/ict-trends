@@ -13,7 +13,7 @@ layout: default
   {% for brand in site.data.brand-types %}
    	   <li>
       	   <a href="#">{{brand.title}}</a>
-      	   {{brand.content | markdownify }}
+      	   {{brand.content}}
    	   </li>
   {% endfor %}
 </ol>

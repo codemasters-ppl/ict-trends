@@ -1,0 +1,13 @@
+<ul>
+	{% for brand in site.pages %}
+	  {% if brand.types == include.types %}
+		<li>
+			<a href="{{site.baseurl}}{{brand.url}}">
+				<img src="{{site.baseurl}}/img/brands/{{brand.image}}" alt="photo of {{brand.title}}">
+				<h3>{{brand.title}}</h3>
+				<p>{{brand.meta}}</p>
+			</a>
+		</li>
+	   {% endif %}
+	{% endfor %}
+</ul>
