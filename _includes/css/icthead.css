@@ -1,0 +1,11 @@
+.icthead {
+	padding: 1em;
+	background: #000531 url("../img/header.jpg") no-repeat center center;
+	background-size: cover;
+
+	color: #fff;	
+}
+
+.icthead-brands{
+	background-image: url("../img/header3.jpg");
+}

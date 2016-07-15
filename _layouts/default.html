@@ -8,12 +8,13 @@
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-	<link rel="stylesheet" href="{{site.baseurl}}/css/common.css">
+	<link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
+
 
 </head>
 <body data-spy="scroll" data-target="#my-navbar">
 <div class="container text-center">
-<header class="masthead">
+<header class="icthead {{page.ictheadClass}}">
 	<h3>Current and Future Trends in ICT</h3>
 	{% include nav.html navclass='nav-top' %}
 </header>
