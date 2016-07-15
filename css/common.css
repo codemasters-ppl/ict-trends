@@ -5,6 +5,14 @@ html {
 	font: normal 100%/1.4  Arial,Georgia,serif;
 }
 
+.masthead {
+	padding: 1em;
+	background: #000531 url("../img/header.jpg") no-repeat center center;
+	background-size: cover;
+
+	color: #fff;	
+}
+
 .current {
 	background: #000531;
 	color: #fff;

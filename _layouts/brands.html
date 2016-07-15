@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<strong>Brands</strong>
+
+<nav>
+	<ul>
+	  {% for brand in site.data.brand-types %}
+	   	   <li>
+	      	   <a href="{{site.baseurl}}/brands/{{brand.folder}}/" class="{% if page.url contains brand.folder %}current{% endif %}"">{{brand.title}}</a>
+	   	   </li>
+	  {% endfor %}
+	</ul>
+</nav>
+
+
+{{content}}

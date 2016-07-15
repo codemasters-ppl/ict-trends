@@ -5,3 +5,7 @@
 - title: Google
   folder: google
   content: 'A **apple brand** is brand of google inc.'
+
+- title: Microsoft
+  folder: microsoft
+  content: 'A **Microsoft** is brand of Microsoft inc.'

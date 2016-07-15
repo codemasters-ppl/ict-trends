@@ -12,7 +12,7 @@ layout: default
 <ol>
   {% for brand in site.data.brand-types %}
    	   <li>
-      	   <a href="#">{{brand.title}}</a>
+      	   <a href="{{site.baseurl}}/brands/{{brand.folder}}">{{brand.title}}</a>
       	   {{brand.content}}
    	   </li>
   {% endfor %}
